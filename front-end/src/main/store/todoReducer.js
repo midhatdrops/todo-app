@@ -11,8 +11,11 @@ export default (state = INITIAL_STATE, action) => {
     case 'TODO_SEARCH': {
       return { ...state, list: action.payload.data };
     }
-    case 'ADD_TODO': {
+    case 'CLEAR_DESCRIPTION': {
       return { ...state, description: '' };
+    }
+    case 'DELETE_TODO': {
+      return { ...state, list: action.payload.data };
     }
     default:
       return state;
