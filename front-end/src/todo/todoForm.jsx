@@ -4,7 +4,7 @@ import IconButton from '../template/iconButton.jsx'
 
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
-import changeDescription from '../main/actions/todoActions.js'
+import {changeDescription} from '../main/actions/todoActions.js'
 
 const todoForm =  props => {
   const keyHandler = (e) => {
